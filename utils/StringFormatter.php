@@ -29,10 +29,6 @@ class StringFormatter {
 
 		foreach($strArr as $key => $item) {
 			$strArr[$key] = self::getInstance()->_sortWord($item);
-
-			if($strArr[$key] === '') {
-				$strArr[$key] = ' ';
-			}
 		}
 
 		return implode(' ',$strArr);
